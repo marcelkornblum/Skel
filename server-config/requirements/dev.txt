@@ -1,0 +1,15 @@
+django-debug-toolbar==0.9.4
+django-extensions==1.2.2
+ipython==1.1.0
+
+#
+# Code Analysis
+
+# Code formatting and syntax errors
+flake8==2.0
+# requires
+pep8==1.4.6
+pyflakes==0.7.3
+
+# Code complexity metrics
+mccabe==0.2.1

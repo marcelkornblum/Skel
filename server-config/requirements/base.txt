@@ -1,0 +1,90 @@
+#
+# Definitely want these...
+#
+
+# Django!
+Django==1.4
+
+# Deployment scripts
+Fabric==1.8.0
+
+# Database Migrations
+South==0.8.2
+
+# Error logging and aggregation
+raven==3.5.0
+# requires
+django-sentry==1.13.5
+
+# Python 2 / 3 Compatibility
+six==1.4.1
+
+# Timezone aware
+pytz==2013.7
+
+# WSGI Server Compat
+wsgiref==0.1.2
+
+# DBs accessed via URL for portability
+dj-database-url==0.2.2
+
+# Green threads (concurrent non-locking network operations)
+eventlet==0.14.0
+# requires
+greenlet==0.4.1
+
+#
+# Trove of maybe useful stuff
+#
+
+#
+# APIs
+
+# HTTP Requests
+requests==2.0.0
+
+# Key-value indexing on JSON type objects
+django-indexer==0.3.0
+
+# REST framework
+djangorestframework==2.3.8
+
+# CORS headers
+django-cors-headers==0.12
+
+#
+# HTML Templated Sites
+
+# Sexy pagination
+django-paging==0.2.5
+
+# HTML Template tag sexiness
+django-templatetag-sugar==0.1
+
+#
+# CLI interface
+
+# Simple argument passing
+argparse==1.2.1
+
+# Daemon process lib
+python-daemon==1.6
+
+#
+# GIS / Maps
+
+Werkzeug==0.9.4
+
+#
+# Misc
+
+# SSH & SFTP
+paramiko==1.12.0
+
+# Lockfile decorator
+lockfile==0.9.1
+
+# Crypto signature lib
+ecdsa==0.9
+# requires
+pycrypto==2.6
