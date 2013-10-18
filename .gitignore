@@ -1,10 +1,38 @@
+# Python
 *.pyc
-/*/settings/local.py
-/*/settings/secret.py
-/*/static/
-/*/media/
-/dev.db
-/.coverage
-/cover/
-/coverage.xml
-/nosetests.xml
+*.pyo
+
+# Setup bits that oughtn't to be here anyway
+.installed.cfg
+develop-eggs
+dist
+downloads
+eggs
+parts
+src/*.egg-info
+lib
+lib64
+
+# OS X special files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+
+# Linux special files
+*~
+
+# Windows special files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Thumbnails
+._*
+
+# Editor special files
+*.sublime-*
+.project
