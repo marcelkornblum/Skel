@@ -39,7 +39,6 @@ of useful Django application and setup for development, production and
     make -f server-config/Makefile dev-setup
 
     # connect the setup to your project's repo
-    cd ..
     git remote rm origin
     git remote add origin yourgitrepo-url
     git add *
