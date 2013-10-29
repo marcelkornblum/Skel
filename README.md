@@ -20,7 +20,8 @@ of useful Django application and setup for development, production and
     # Vagrant box - it's ready to go at server-config/Vagrantfile
 
     # prepare the virtual environment
-    mkvirtualenv --no-site-packages myenv
+    virtualenv --no-site-packages myenv
+    cd myenv
 
     # get the skeleton project
     git clone https://github.com/marcelkornblum/Skel.git yourprojectname
@@ -30,14 +31,18 @@ of useful Django application and setup for development, production and
     cd yourprojectname
     mv django/xxxprojectnamexxx django/yourprojectname
     find ./ -type f -exec sed -i 's/xxxprojectnamexxx/yourprojectname/g' {} \;
+    
+    # get into your virtualenv
+    source ../bin/activate
 
     # set up the development environment
+    cd server-config
     make dev-setup
 
     # connect the setup to your project's repo
     cd ..
-    git remote remove origin
-    git remote add origin yourgitrepourl
+    git remote rm origin
+    git remote add origin yourgitrepo
 
     # run your fully operational Django project
     cd yourprojectname
