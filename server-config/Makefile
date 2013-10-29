@@ -31,13 +31,16 @@ ensure_virtualenv:
 		exit 1; \
 	fi
 
-reqs/dev: ensure_virtualenv
+reqs/base: ensure_virtualenv
+	pip install -r requirements/base.txt
+	
+reqs/dev: ensure_virtualenv reqs/base
 	pip install -r requirements/dev.txt
 
-reqs/test: ensure_virtualenv
+reqs/test: ensure_virtualenv reqs/base
 	pip install -r requirements/test.txt
 
-reqs/prod: ensure_virtualenv
+reqs/prod: ensure_virtualenv reqs/base
 	pip install -r requirements/prod.txt
 
 reqs-update:
