@@ -42,7 +42,10 @@ of useful Django application and setup for development, production and
     # connect the setup to your project's repo
     cd ..
     git remote rm origin
-    git remote add origin yourgitrepo
+    git remote add origin yourgitrepo-url
+    git add *
+    git commit -am 'initial setup from skel'
+    git push origin master
 
     # run your fully operational Django project
     cd yourprojectname
