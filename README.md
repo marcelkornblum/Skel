@@ -36,8 +36,7 @@ of useful Django application and setup for development, production and
     source ../bin/activate
 
     # set up the development environment
-    cd server-config
-    make dev-setup
+    make -f server-config/Makefile dev-setup
 
     # connect the setup to your project's repo
     cd ..
